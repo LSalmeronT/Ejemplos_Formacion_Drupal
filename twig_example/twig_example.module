@@ -1,0 +1,28 @@
+<?php
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function twig_example_help($route_name, RouteMatchInterface $route_match) {
+  if ($route_name=='help.page.twig_example') {
+    $output = '';
+    $output .= '<h3>' . t('About') . '</h3>';
+    $output .= '<p>' . t('Modulo de ejemplo para formación Drupal - Twig') . '</p>';
+    return $output;
+  }
+}
+
+function twig_example_theme() {
+
+  return [
+    'page__front' => [
+      'base hook' => 'page'
+    ],
+    'example_template' => [
+      'variables' => ['example_text' => NULL],
+    ],
+  ];
+
+}

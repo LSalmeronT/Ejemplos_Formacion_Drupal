@@ -1,0 +1,10 @@
+id: rest_example
+plugin_id: rest_example
+granularity: method
+status: true
+configuration:
+  GET:
+    supported_formats:
+      - json
+    supported_auth:
+      - cookie

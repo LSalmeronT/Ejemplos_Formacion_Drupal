@@ -1,0 +1,6 @@
+twig_formacion.example:
+  path: /twigtest
+  defaults:
+    _controller: Drupal\twig_example\Controller\TwigExampleController::twigExample
+  requirements:
+      _permission: 'access content'

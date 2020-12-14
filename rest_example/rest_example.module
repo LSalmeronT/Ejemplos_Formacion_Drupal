@@ -1,0 +1,15 @@
+<?php
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function rest_example_help($route_name, RouteMatchInterface $route_match) {
+  if ($route_name=='help.page.rest_example') {
+    $output = '';
+    $output .= '<h3>' . t('About') . '</h3>';
+    $output .= '<p>' . t('Modulo de ejemplo para formación Drupal - Exponer recursos en API REST') . '</p>';
+    return $output;
+  }
+}

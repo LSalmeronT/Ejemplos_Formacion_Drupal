@@ -1,0 +1,11 @@
+name: 'Drupal Formación - API Rest'
+type: module
+description: 'Modulo de ejemplo para formación Drupal - Exponer recursos en API REST'
+core_version_requirement: ^8.8.0 || ^9.0
+package: Everis
+
+dependencies:
+  - drupal:serialization
+  - drupal:rest
+  - drupal:restui
+  - drupal:basic_auth

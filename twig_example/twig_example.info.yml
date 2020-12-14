@@ -1,0 +1,5 @@
+name: 'Drupal Formación - Twig'
+type: module
+description: 'Modulo de ejemplo para formación Drupal - Twig'
+core_version_requirement: ^8.8.0 || ^9.0
+package: Everis
